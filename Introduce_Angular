@@ -1,0 +1,14 @@
+Angular là một framework giúp các developer phát trển website một cách nhanh chóng và đáng tin cậy. Angular được phát triển bởi đội ngũ kỹ thuật tại Google; Angular cung cấp công cụ, API và thư viện rộng rãi để đơn giản hóa và tối ưu cho quy trình phát triển web
+Một số tính năng hữu ích có thể kể đến giúp Angular có thể phát triển website một cách nhanh chóng có thể kể đến như: Components, Router, Form Modules
+1.	Component
+-	Giúp tái sử dụng
+-	Tính module hóa: Mỗi component có file riêng, login riêng
+-	Chỉ update những component cần thiết, không reload toàn bộ trang
+2.	Route
+-	Chuyển trang mượt không cần reload
+-	Có route guard bảo vệ route dễ dàng
+-	Có lazy loading chỉ load module khi cần
+3.	Form Module
+-	Angular cung cấp 2 kiểu Form: Reactive Form và Template driven form
+-	Xử lý logic phản hồi ngay
+
