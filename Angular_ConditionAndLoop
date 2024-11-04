@@ -1,0 +1,9 @@
+-	Angular trợ giúp dev hiển thị có điều kiện hoặc lặp lại nội dung cho dữ liệu động thông qua các directive: *ngFor, *ngIf. Từ Angular 17 trở lên Angular có thêm @if, @for được gọi là các built-in control flow blocks với chức năng tương tự như *ngFor và *ngIf nhưng có nhiều ưu điểm hơn như:
+o	Perfomance tốt hơn do được built-in sẵn trong Angular compiler
+o	@if kết hợp với @else, @if một cách tự nhiên hơn *ngIf. Dùng *ngIf phải sử dụng thêm <ng-template>
+-	Ngoài ra Angular còn cung cấp thêm “track/trackBy” property giúp tối ưu hiệu năng khi render data với *ngFor/@for. “Track” giúp Angular tối ưu hiệu năng bằng cách sau:
+o	Theo dõi các phần tử trong list
+o	Xác định phần tử nào thay đổi/di chuyển/xóa/thêm mới (nên sử dụng track cùng một trường làm key/unique identity
+o	Chỉ re render những phần tử thay đổi
+	Như vậy khi sử dụng track/trackBy với @for/*ngFor thì việc tạo DOM element sẽ chỉ được thực hiện ở những element thực sự thay đổi; còn khi không dùng thì toàn bộ DOM element sẽ được tạo lại từ đầu
+
